@@ -1,6 +1,6 @@
 def Create_Database_Railway():
     import mysql.connector
-    mycon=mysql.connector.connect(host='localhost',user='root',passwd='At9451ul')    
+    mycon=mysql.connector.connect(host='localhost',user='root',passwd='your credentials')    
     cursor=mycon.cursor()
     mycon.autocommit=True
     s1="create database railway"
@@ -8,7 +8,7 @@ def Create_Database_Railway():
 Create_Database_Railway()
 def connection():
     import mysql.connector
-    mycon=mysql.connector.connect(host='localhost',user='root',passwd='At9451ul',database='railway')
+    mycon=mysql.connector.connect(host='localhost',user='root',passwd='your credentials',database='railway')
     if mycon.is_connected():
         print("successfully connected")
 connection()
@@ -18,7 +18,7 @@ connection()
 
 def table_creation_railway():
     import mysql.connector
-    mycon=mysql.connector.connect(host='localhost',user='root',passwd='At9451ul',database='railway')
+    mycon=mysql.connector.connect(host='localhost',user='root',passwd='your credentials',database='railway')
     cursor=mycon.cursor()
     mycon.autocommit=True
     s1="create table railway(name varchar(100),phno varchar(15)  primary key,age int(4),gender varchar(50),from_f varchar(100),to_t varchar(100),date_d varchar(20))"
@@ -30,7 +30,7 @@ table_creation_railway()
 
 def table_creation_user_accounts():
     import mysql.connector
-    mycon=mysql.connector.connect(host='localhost',user='root',passwd='At9451ul',database='railway')
+    mycon=mysql.connector.connect(host='localhost',user='root',passwd='your credentials',database='railway')
     cursor=mycon.cursor()
     mycon.autocommit=True
     s1="create table user_accounts(fname varchar(100),lname varchar(100),user_name varchar(100) ,password varchar(100) primary key, phno varchar(15),gender varchar(50),dob varchar(50),age varchar(4))"
