@@ -89,7 +89,7 @@ def ticket_booking():
     print('BOOKED SUCCESSFULLY')
 def ticket_checking():
     import mysql.connector
-    mycon=mysql.connector.connect(host='localhost',user='root',passwd='At9451ul@',database='railway')
+    mycon=mysql.connector.connect(host='localhost',user='root',passwd='your password',database='railway')
     cursor=mycon.cursor()
     mycon.autocommit=True
     print('1.yes')
